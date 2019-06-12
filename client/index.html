@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>node-google-sign-in</title>
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID"
+    />
+    <style>
+      body {
+        font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+          'Helvetica', 'Arial', sans-serif;
+      }
+      .g-signin2 {
+        margin-bottom: calc(0.67em * 2);
+      }
+    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to our app!</h1>
+    <p id="sign-in-first-message">Please sign-in first</p>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a
+      id="sign-out-button"
+      href="#"
+      onclick="signOut();"
+      style="display: none;"
+    >
+      Sign Out
+    </a>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "node-google-sign-in-server",
+  "version": "1.0.0",
+  "description": "Server/backend for Google Sign-in",
+  "main": "app.js",
+  "scripts": {
+    "dev": "PORT=3000 npx nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmtrxw-demos/node-google-sign-in.git"
+  },
+  "author": "Dimitri Wahyudiputra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmtrxw-demos/node-google-sign-in/issues"
+  },
+  "homepage": "https://github.com/dmtrxw-demos/node-google-sign-in#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "google-auth-library": "^4.2.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
+  }
+}
